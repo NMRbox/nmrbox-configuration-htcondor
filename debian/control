@@ -10,7 +10,7 @@ Homepage: https://www.nmrbox.org
 
 Package: nmrbox-configuration-htcondor
 Architecture: all
-Depends: ${misc:Depends},nmrbox-bootstrap-htcondor,htcondor (= 8.8.2)
+Depends: ${misc:Depends},nmrbox-bootstrap-htcondor,htcondor(>= 8.8), htcondor(<8.9)
 Description: Trigger htcondor installation and startup 
   Install prerequisite package, insures newer version of htcondor installed
   and enables / starts daemon
