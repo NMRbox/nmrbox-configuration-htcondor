@@ -1,6 +1,6 @@
 # nmrbox-configuration-htcondor
 Overrides to htcondor startup to allow using an Active Directory account.
-
+## The problem
 We prefer to create accounts centrally using LDAP (in our case, Active Directory) server to simplify administration.
 
 We had a problem with the condor service not starting on an Ubuntu 18 (debian) system because the /var/run/condor didn't exist.
@@ -11,3 +11,5 @@ name.
 This solution runs _/bin/systemd-tmpfiles_ a second time after sssd has been started. A systemd override file directs
 systemd to execute the service condor-tmpfiles-setup before starting condor.
 
+### Note
+To create a debian package from the source, install _dpkg-dev_ and then execute _dpkg-buildpackage -b -uc -us_.
