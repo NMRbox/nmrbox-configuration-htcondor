@@ -1,3 +1,9 @@
+nmrbox-configuration-htcondor (1-2) bionic; urgency=medium
+
+  * Specify 8.8.2 htcondor
+
+ -- Gerard Weatherby <gweatherby@uchc.edu>  Mon, 03 Jun 2019 20:42:06 -0400
+
 nmrbox-configuration-htcondor (1-1) bionic; urgency=medium
 
   * Initial release 
