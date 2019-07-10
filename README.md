@@ -1,6 +1,9 @@
+# OBSOLETE
+This is no longer required as of htcondor release 8.8.4.1.
+
 # nmrbox-configuration-htcondor
-Overrides to htcondor startup to allow using an Active Directory account.
-## The problem
+Overrode htcondor startup to allow using an Active Directory account.
+## The (former) problem
 We prefer to create accounts centrally using LDAP (in our case, Active Directory) server to simplify administration.
 
 We had a problem with the condor service not starting on an Ubuntu 18 (debian) system because the /var/run/condor didn't exist.
